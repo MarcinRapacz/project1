@@ -1,0 +1,100 @@
+.header {
+  position: relative;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+
+  &::before {
+    content: "";
+    opacity: 0.15;
+    display: block;
+    position: absolute;
+    width: 15vw;
+    height: 0.1em;
+    top: 39%;
+    right: 220px;
+    border-top: 1px solid $dark-bg;
+    border-bottom: 1px solid $dark-bg;
+  }
+
+  &::after {
+    content: "";
+    opacity: 0.15;
+    display: block;
+    position: absolute;
+    width: 15vw;
+    height: 0.1em;
+    top: 39%;
+    left: 220px;
+    border-top: 1px solid $dark-bg;
+    border-bottom: 1px solid $dark-bg;
+  }
+
+  .header-text {
+    &.header-text--primary {
+      color: $primary-text;
+    }
+    &.header-text--secondary {
+      color: $secondary-text;
+    }
+    &.header-text--dark {
+      color: $dark-text;
+    }
+  }
+
+  .header-square {
+    position: absolute;
+    top: 30%;
+    display: inline-block;
+    background-color: $primary-bg;
+    border: 1px solid $primary-bg;
+    width: 0.3em;
+    height: 0.3em;
+    transform: rotate(45deg);
+    &:nth-child(1) {
+      left: -7%;
+      &::before {
+        content: "";
+        display: block;
+        opacity: 0.6;
+        background-color: $primary-bg;
+        border: 1px solid $primary-bg;
+        width: 0.2em;
+        height: 0.2em;
+        transform: translate(-5px, 5px);
+      }
+      &::after {
+        content: "";
+        display: block;
+        opacity: 0.3;
+        background-color: $primary-bg;
+        border: 1px solid $primary-bg;
+        width: 0.1em;
+        height: 0.1em;
+        transform: translate(-7px, 3px);
+      }
+    }
+    &:nth-last-child(1) {
+      right: -7%;
+      &::before {
+        content: "";
+        display: block;
+        opacity: 0.6;
+        background-color: $primary-bg;
+        border: 1px solid $primary-bg;
+        width: 0.2em;
+        height: 0.2em;
+        transform: translate(5px, -5px);
+      }
+      &::after {
+        content: "";
+        display: block;
+        opacity: 0.3;
+        background-color: $primary-bg;
+        border: 1px solid $primary-bg;
+        width: 0.1em;
+        height: 0.1em;
+        transform: translate(9px, -13px);
+      }
+    }
+  }
+}

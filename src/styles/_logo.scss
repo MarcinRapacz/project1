@@ -1,0 +1,91 @@
+.logo {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  height: 90vh;
+  background-image: url("../images/logo.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  text-align: center;
+  text-transform: uppercase;
+
+  .logo-header {
+    color: $dark-text;
+    margin: 0;
+  }
+  .logo-header--h1 {
+    opacity: 0;
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+    animation: show 1s 1.5s ease-in 1 both;
+  }
+  .logo-header--h2 {
+    opacity: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    animation: show 1s ease-in 1 both;
+  }
+  .logo-desc {
+    opacity: 0;
+    border-radius: 4px;
+    background-color: $dark-bg;
+    color: $secondary-text;
+    padding: 0.4rem 0.1rem;
+    font-size: 0.9rem;
+    animation: show 1s 3s ease-in 1 both;
+
+    strong {
+      font-size: 1rem;
+      text-transform: capitalize;
+    }
+    span {
+      color: $primary-text;
+    }
+  }
+  .logo-link {
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid $primary-text;
+    border-radius: 50%;
+    line-height: 0;
+    transition: 0.3s;
+    animation: show 1s 4s ease-in 1 both;
+    &:hover {
+      background-color: rgba($light-bg, 0.4);
+    }
+  }
+  .logo-arrow {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    font-weight: normal;
+    color: $primary-text;
+    text-decoration: none;
+    animation: runArrow 1.5s linear infinite;
+  }
+}
+
+@keyframes runArrow {
+  100% {
+    top: 80%;
+  }
+}
+
+@keyframes show {
+  100% {
+    opacity: 1;
+  }
+}

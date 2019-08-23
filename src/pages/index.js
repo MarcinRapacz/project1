@@ -1,3 +1,12 @@
 import React from "react"
+import "normalize.css"
+import "../styles/main.scss"
 
-export default () => <div>Hello world!</div>
+// Components
+import Logo from "../components/Logo"
+
+export default () => (
+  <>
+    <Logo />
+  </>
+)
