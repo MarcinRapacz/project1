@@ -10,7 +10,7 @@ const Offer = () => {
   }
 
   return (
-    <section className="container offer">
+    <section className="container offer" id="offer">
       <Header first={header.first} second={header.second} />
       <p className="offer-desc">
         We offer our customers the bestg services & solutions, this is our main

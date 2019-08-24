@@ -1,3 +1,36 @@
+@mixin create-line {
+  content: "";
+  opacity: 0.15;
+  display: block;
+  position: absolute;
+  width: 15vw;
+  height: 0.1em;
+  top: 39%;
+  border-top: 1px solid $dark-bg;
+  border-bottom: 1px solid $dark-bg;
+}
+
+@mixin create-square {
+  content: "";
+  display: block;
+  background-color: $primary-bg;
+  border: 1px solid $primary-bg;
+}
+
+@mixin create-medium-square {
+  @include create-square;
+  opacity: 0.6;
+  width: 0.2em;
+  height: 0.2em;
+}
+
+@mixin create-small-square {
+  @include create-square;
+  opacity: 0.3;
+  width: 0.1em;
+  height: 0.1em;
+}
+
 .header {
   position: relative;
   font-size: 1.2rem;
@@ -9,29 +42,13 @@
   }
 
   &::before {
-    content: "";
-    opacity: 0.15;
-    display: block;
-    position: absolute;
-    width: 15vw;
-    height: 0.1em;
-    top: 39%;
+    @include create-line;
     right: 220px;
-    border-top: 1px solid $dark-bg;
-    border-bottom: 1px solid $dark-bg;
   }
 
   &::after {
-    content: "";
-    opacity: 0.15;
-    display: block;
-    position: absolute;
-    width: 15vw;
-    height: 0.1em;
-    top: 39%;
+    @include create-line;
     left: 220px;
-    border-top: 1px solid $dark-bg;
-    border-bottom: 1px solid $dark-bg;
   }
 
   .header-text {
@@ -58,46 +75,22 @@
     &:nth-child(1) {
       left: -7%;
       &::before {
-        content: "";
-        display: block;
-        opacity: 0.6;
-        background-color: $primary-bg;
-        border: 1px solid $primary-bg;
-        width: 0.2em;
-        height: 0.2em;
+        @include create-medium-square;
         transform: translate(-5px, 5px);
       }
       &::after {
-        content: "";
-        display: block;
-        opacity: 0.3;
-        background-color: $primary-bg;
-        border: 1px solid $primary-bg;
-        width: 0.1em;
-        height: 0.1em;
+        @include create-small-square;
         transform: translate(-7px, 3px);
       }
     }
     &:nth-last-child(1) {
       right: -7%;
       &::before {
-        content: "";
-        display: block;
-        opacity: 0.6;
-        background-color: $primary-bg;
-        border: 1px solid $primary-bg;
-        width: 0.2em;
-        height: 0.2em;
+        @include create-medium-square;
         transform: translate(5px, -5px);
       }
       &::after {
-        content: "";
-        display: block;
-        opacity: 0.3;
-        background-color: $primary-bg;
-        border: 1px solid $primary-bg;
-        width: 0.1em;
-        height: 0.1em;
+        @include create-small-square;
         transform: translate(9px, -13px);
       }
     }
