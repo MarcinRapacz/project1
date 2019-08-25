@@ -37,18 +37,21 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: 360px) {
+    &::before {
+      @include create-line;
+      right: 220px;
+    }
+
+    &::after {
+      @include create-line;
+      left: 220px;
+    }
+  }
+
   @media (min-width: 1024px) {
     font-size: 1.4rem;
-  }
-
-  &::before {
-    @include create-line;
-    right: 220px;
-  }
-
-  &::after {
-    @include create-line;
-    left: 220px;
   }
 
   .header-text {

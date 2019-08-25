@@ -1,0 +1,19 @@
+$size: 20px;
+
+.decorator {
+  position: absolute;
+  box-sizing: border-box;
+  top: -$size;
+  left: 50%;
+  width: $size * 2;
+  height: $size * 2;
+  color: $secondary-text;
+  background-color: $primary-bg;
+  border-radius: 3px;
+  line-height: $size * 2;
+  transform: translateX(-50%) rotate(45deg);
+
+  &--darker {
+    background-color: $dark-bg;
+  }
+}

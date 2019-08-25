@@ -1,0 +1,104 @@
+@mixin create-triangle {
+  position: absolute;
+  bottom: -1.45rem;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 1.5rem solid transparent;
+}
+
+.feature-icons {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $light-bg;
+  padding: 100px 1.5rem;
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 3rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  &-item {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-column-gap: 1rem;
+  }
+  &-icon {
+    position: relative;
+    display: block;
+    width: 4rem;
+    height: 3rem;
+    box-sizing: border-box;
+    padding-top: 1.5rem;
+    border-radius: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: $dark-bg;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $secondary-text;
+    box-shadow: 0 1.5rem 0 $primary-bg;
+    &::before {
+      @include create-triangle;
+      border-top-color: $dark-bg;
+    }
+
+    &::after {
+      @include create-triangle;
+      border-top-color: $primary-bg;
+      bottom: -2.95rem;
+    }
+
+    &--reverse {
+      box-shadow: 0 1.5rem 0 $dark-bg;
+
+      background-color: $primary-bg;
+      &::before {
+        @include create-triangle;
+        border-top-color: $primary-bg;
+      }
+
+      &::after {
+        @include create-triangle;
+        border-top-color: $dark-bg;
+        bottom: -2.95rem;
+      }
+    }
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: $dark-text;
+    text-transform: uppercase;
+  }
+  &-subtitle {
+    margin: 0;
+    margin-bottom: 1.2rem;
+    line-height: 1;
+    font-weight: normal;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: $light-text;
+  }
+  &-desc {
+    margin: 0;
+    color: $dark-text;
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+}

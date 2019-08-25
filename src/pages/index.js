@@ -6,11 +6,15 @@ import "../styles/main.scss"
 import Logo from "../components/Logo"
 import Navbar from "../components/Navbar"
 import Offer from "../components/Offer"
+import Features from "../components/Features"
+import FeatureIcons from "../components/FeatureIcons"
 
 export default () => (
   <>
     <Logo />
     <Navbar />
     <Offer />
+    <Features />
+    <FeatureIcons />
   </>
 )
