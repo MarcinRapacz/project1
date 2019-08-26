@@ -1,8 +1,10 @@
-import React, { useState } from "react"
+import React from "react"
+import { FaBriefcase } from "react-icons/fa"
 import VisibilitySensor from "react-visibility-sensor"
 
 // Components
 import Header from "./Header"
+import Decorator from "./Decorator"
 
 // Progress Bars
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
@@ -27,6 +29,9 @@ const Skills = () => {
 
   return (
     <section className="skills container" id="skills">
+      <Decorator>
+        <FaBriefcase className="decorator-icon" />
+      </Decorator>
       <Header first={header.first} second={header.second} />
       <p className="skills-desc">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam

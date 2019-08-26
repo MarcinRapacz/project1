@@ -9,6 +9,7 @@ import Offer from "../components/Offer"
 import Features from "../components/Features"
 import FeatureIcons from "../components/FeatureIcons"
 import Skills from "../components/Skills"
+import Works from "../components/Works"
 
 export default () => (
   <>
@@ -18,5 +19,6 @@ export default () => (
     <Features />
     <FeatureIcons />
     <Skills />
+    <Works />
   </>
 )

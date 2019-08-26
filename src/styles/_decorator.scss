@@ -13,6 +13,10 @@ $size: 20px;
   line-height: $size * 2;
   transform: translateX(-50%) rotate(45deg);
 
+  svg {
+    transform: translate(-7%, 7%) rotate(-45deg);
+  }
+
   &--darker {
     background-color: $dark-bg;
   }
