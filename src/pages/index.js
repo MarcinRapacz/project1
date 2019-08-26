@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar"
 import Offer from "../components/Offer"
 import Features from "../components/Features"
 import FeatureIcons from "../components/FeatureIcons"
+import Skills from "../components/Skills"
 
 export default () => (
   <>
@@ -16,5 +17,6 @@ export default () => (
     <Offer />
     <Features />
     <FeatureIcons />
+    <Skills />
   </>
 )
