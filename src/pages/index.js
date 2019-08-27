@@ -10,6 +10,7 @@ import Features from "../components/Features"
 import FeatureIcons from "../components/FeatureIcons"
 import Skills from "../components/Skills"
 import Works from "../components/Works"
+import Facts from "../components/Facts"
 
 export default () => (
   <>
@@ -20,5 +21,6 @@ export default () => (
     <FeatureIcons />
     <Skills />
     <Works />
+    <Facts />
   </>
 )
