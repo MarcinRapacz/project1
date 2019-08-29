@@ -8,10 +8,10 @@
   padding: 100px 1rem;
   text-align: center;
   background-color: $dark-bg;
-  &-desc {
+  &__desc {
     color: $medium-text;
   }
-  &-container {
+  &__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
@@ -27,7 +27,7 @@
       grid-template-columns: repeat(6, 1fr);
     }
   }
-  &-header {
+  &__header {
     font-size: 1.1rem;
     letter-spacing: 1px;
     text-transform: uppercase;

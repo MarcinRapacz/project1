@@ -32,6 +32,7 @@ const Facts = () => {
       desc: "hours of work",
       desc2: "/month",
       active: true,
+      primary: true,
     },
     {
       number: 135,
@@ -63,16 +64,19 @@ const Facts = () => {
         <FaBriefcase />
       </Decorator>
       <Header first={header.first} second={header.second} />
-      <p className="facts-desc">
+      <p className="facts__desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
         mollitia.
       </p>
-      <div className="facts-container">
+      <div className="facts__container">
         {counters.map(conter => (
           <div className="counter" key={conter.desc}>
-            <div className="counter-header">
-              <span className="counter-square"></span>
-              <h1 className="counter-number">
+            <div className="counter__header">
+              <span
+                className={`counter__square ${conter.primary &&
+                  "counter__square--primary"}`}
+              ></span>
+              <h1 className="counter__number">
                 <VisibilitySensor active={conter.active}>
                   {({ isVisible }) => {
                     isVisible && unactiveSensor(conter)
@@ -81,14 +85,17 @@ const Facts = () => {
                   }}
                 </VisibilitySensor>
               </h1>
-              <span className="counter-square"></span>
+              <span
+                className={`counter__square ${conter.primary &&
+                  "counter__square--primary"}`}
+              ></span>
             </div>
-            <div className="counter-icon">
-              <span className="counter-line"></span>
+            <div className="counter__icon">
+              <span className="counter__line"></span>
               {conter.icon}
-              <span className="counter-line"></span>
+              <span className="counter__line"></span>
             </div>
-            <p className="counter-desc">
+            <p className="counter__desc">
               {conter.desc}
               <small>{conter.desc2}</small>
             </p>

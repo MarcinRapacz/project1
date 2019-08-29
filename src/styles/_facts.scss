@@ -8,10 +8,10 @@
   box-sizing: border-box;
   padding: 100px 1rem;
   background-color: $dark-bg;
-  &-desc {
+  &__desc {
     color: $medium-text;
   }
-  &-container {
+  &__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -30,19 +30,19 @@
   }
 
   .counter {
-    &-header {
+    &__header {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    &-number {
+    &__number {
       margin: 0 1rem;
       font-size: 3.6rem;
       font-style: italic;
       font-weight: normal;
       color: $secondary-text;
     }
-    &-square {
+    &__square {
       height: 0.5rem;
       width: 0.5rem;
       background-color: $medium-text;
@@ -51,17 +51,17 @@
         background-color: $primary-text;
       }
     }
-    &-icon {
+    &__icon {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       color: $primary-text;
     }
-    &-line {
+    &__line {
       border: 1px solid $medium-text;
       width: 35%;
     }
-    &-desc {
+    &__desc {
       font-weight: bold;
       text-transform: uppercase;
       color: $light-text;

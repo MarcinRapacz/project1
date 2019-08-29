@@ -26,57 +26,57 @@ const Navbar = () => {
 
   return (
     <section className="navbar container" id="navbar">
-      <h1 className="navbar-logo">
+      <h1 className="navbar__logo">
         backtick<span>.pl</span>
       </h1>
       {!showMenu && (
-        <div className="navbar-hamburger">
+        <div className="navbar__hamburger">
           <FaBars onClick={() => setShowMenu(true)} />
         </div>
       )}
-      <ul className={`navbar-list ${showMenu && "navbar-list--show"}`}>
-        <li className="navbar-item">
-          <Link onClick={handleClick} className="navbar-link" to="/#home">
+      <ul className={`navbar__list ${showMenu && "navbar__list--show"}`}>
+        <li className="navbar__item">
+          <Link onClick={handleClick} className="navbar__link" to="/#home">
             home
           </Link>
         </li>
-        <li className="navbar-item">
-          <Link onClick={handleClick} className="navbar-link" to="/#offer">
+        <li className="navbar__item">
+          <Link onClick={handleClick} className="navbar__link" to="/#offer">
             offer
           </Link>
         </li>
-        <li className="navbar-item">
-          <Link onClick={handleClick} className="navbar-link" to="/#features">
+        <li className="navbar__item">
+          <Link onClick={handleClick} className="navbar__link" to="/#features">
             features
           </Link>
         </li>
-        <li className="navbar-item">
-          <Link onClick={handleClick} className="navbar-link" to="/#skills">
+        <li className="navbar__item">
+          <Link onClick={handleClick} className="navbar__link" to="/#skills">
             skills
           </Link>
         </li>
-        <li className="navbar-item">
-          <Link onClick={handleClick} className="navbar-link" to="/#works">
+        <li className="navbar__item">
+          <Link onClick={handleClick} className="navbar__link" to="/#works">
             works
           </Link>
         </li>
-        <li className="navbar-item">
-          <Link onClick={handleClick} className="navbar-link" to="/#facts">
+        <li className="navbar__item">
+          <Link onClick={handleClick} className="navbar__link" to="/#facts">
             facts
           </Link>
         </li>
-        <li className="navbar-item">
-          <Link onClick={handleClick} className="navbar-link" to="/#team">
+        <li className="navbar__item">
+          <Link onClick={handleClick} className="navbar__link" to="/#team">
             team
           </Link>
         </li>
-        <li className="navbar-item">
-          <Link onClick={handleClick} className="navbar-link" to="/#prices">
+        <li className="navbar__item">
+          <Link onClick={handleClick} className="navbar__link" to="/#prices">
             prices
           </Link>
         </li>
-        <li className="navbar-item">
-          <Link onClick={handleClick} className="navbar-link" to="/#contact">
+        <li className="navbar__item">
+          <Link onClick={handleClick} className="navbar__link" to="/#contact">
             contact
           </Link>
         </li>
@@ -84,7 +84,7 @@ const Navbar = () => {
       {showMenu && (
         <div
           onClick={() => setShowMenu(false)}
-          className="navbar-backdrop"
+          className="navbar__backdrop"
         ></div>
       )}
     </section>

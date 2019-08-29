@@ -12,6 +12,9 @@ import Skills from "../components/Skills"
 import Works from "../components/Works"
 import Facts from "../components/Facts"
 import Question from "../components/Question"
+import Members from "../components/Members"
+import Comments from "../components/Comments"
+import Companies from "../components/Companies"
 
 export default () => (
   <>
@@ -24,5 +27,8 @@ export default () => (
     <Works />
     <Facts />
     <Question />
+    <Members />
+    <Comments />
+    <Companies />
   </>
 )

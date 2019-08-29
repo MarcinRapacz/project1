@@ -28,17 +28,19 @@ const Logo = () => {
 
   return (
     <header className="logo container" id="home">
-      <h2 className="logo-header logo-header--h2">What are you waiting for?</h2>
-      <h1 className="logo-header logo-header--h1">Let's be creative!</h1>
-      <p className="logo-desc">
+      <h2 className="logo__header logo__header--h2">
+        What are you waiting for?
+      </h2>
+      <h1 className="logo__header logo__header--h1">Let's be creative!</h1>
+      <p className="logo__desc">
         <strong>
           <span>U</span>nique,{" "}
         </strong>
         next generation & highly flexible wordpress theme
       </p>
       <Header first={header.first} second={header.second} />
-      <Link to="/#" className="logo-link" onClick={handleClick}>
-        <FaAngleDown className="logo-arrow" />
+      <Link to="/#" className="logo__link" onClick={handleClick}>
+        <FaAngleDown className="logo__arrow" />
       </Link>
     </header>
   )

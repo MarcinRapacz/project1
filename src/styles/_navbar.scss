@@ -9,7 +9,7 @@
     justify-items: center;
     z-index: 10;
   }
-  .navbar-logo {
+  &__logo {
     display: none;
     @media (min-width: 1024px) {
       display: block;
@@ -21,7 +21,7 @@
       }
     }
   }
-  .navbar-hamburger {
+  &__hamburger {
     position: fixed;
     top: 1.4rem;
     right: 2rem;
@@ -33,7 +33,7 @@
       display: none;
     }
   }
-  .navbar-list {
+  &__list {
     position: fixed;
     top: 0;
     right: -70vw;
@@ -53,7 +53,7 @@
       display: flex;
     }
   }
-  .navbar-item {
+  &__item {
     text-align: center;
     line-height: calc(100vh / 9);
     @media (min-width: 1024px) {
@@ -61,7 +61,7 @@
       line-height: 1;
     }
   }
-  .navbar-link {
+  &__link {
     display: block;
     box-sizing: border-box;
     height: calc(100vh / 9);
@@ -88,7 +88,7 @@
       margin: 0 5px;
     }
   }
-  .navbar-backdrop {
+  &__backdrop {
     background-color: #0008;
     position: fixed;
     top: 0;

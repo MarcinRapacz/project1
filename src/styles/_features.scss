@@ -9,20 +9,20 @@
   background-color: $dark-bg;
   text-align: center;
 
-  &-desc {
+  &__desc {
     color: $medium-text;
   }
-  &-content {
+  &__content {
     max-width: 1024px;
     @media (min-width: 1024px) {
       display: grid;
       grid-template-columns: 1fr 2fr;
     }
   }
-  &-list {
+  &__list {
     padding-bottom: 100px;
   }
-  &-item {
+  &__item {
     @media (min-width: 768px) {
       margin: 0 auto;
       width: 60%;
@@ -31,7 +31,7 @@
       width: 100%;
     }
   }
-  &-img {
+  &__img {
     @media (min-width: 1024px) {
       background-image: url("../images/phone.png");
       background-repeat: no-repeat;
@@ -46,17 +46,17 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    &-title {
+    &__title {
       margin: 1rem 0 0.7rem;
       text-transform: uppercase;
       font-size: 1.2rem;
       color: $secondary-text;
     }
-    &-desc {
+    &__desc {
       margin: 0;
       color: $light-text;
     }
-    &-icon {
+    &__icon {
       margin: 0;
       font-size: 3.6rem;
       color: $primary-text;

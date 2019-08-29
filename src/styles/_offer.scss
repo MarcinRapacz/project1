@@ -7,11 +7,11 @@
   align-items: center;
   padding: 100px 1.5rem;
   background-color: $light-bg;
-  .offer-desc {
+  &__desc {
     text-align: center;
     color: $light-text;
   }
-  .offer-items {
+  &__items {
     max-width: 1024px;
     @media (min-width: 768px) {
       display: grid;
@@ -26,7 +26,7 @@
   .item {
     margin-top: 2rem;
     text-align: center;
-    .item-icon-container {
+    &__icon-container {
       margin: 0 auto;
       background-color: $dark-bg;
       border-radius: 50%;
@@ -37,21 +37,21 @@
         background-color: $primary-bg;
       }
     }
-    .item-icon {
+    &__icon {
       padding-top: 1.5rem;
       color: $secondary-text;
     }
-    .item-title {
+    &__title {
       margin-bottom: 0.5rem;
       text-transform: uppercase;
       font-size: 1.2rem;
       color: $dark-text;
     }
-    .item-desc {
+    &__desc {
       margin-top: 0;
       color: $light-text;
     }
-    .item-btn {
+    &__btn {
       padding: 1rem;
       background-color: transparent;
       color: $light-text;

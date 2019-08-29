@@ -12,43 +12,43 @@ const Offer = () => {
   return (
     <section className="container offer" id="offer">
       <Header first={header.first} second={header.second} />
-      <p className="offer-desc">
+      <p className="offer__desc">
         We offer our customers the bestg services & solutions, this is our main
         services list
       </p>
-      <div className="offer-items">
+      <div className="offer__items">
         <div className="item">
-          <div className="item-icon-container">
-            <FaDesktop className="item-icon" />
+          <div className="item__icon-container">
+            <FaDesktop className="item__icon" />
           </div>
-          <h1 className="item-title">Responsive & Multipurpose</h1>
-          <p className="item-desc">
+          <h1 className="item__title">Responsive & Multipurpose</h1>
+          <p className="item__desc">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Praesentium consequatur odit illo nesciunt nulla? Fuga, nisi.
           </p>
-          <button className="item-btn">Read more</button>
+          <button className="item__btn">Read more</button>
         </div>
         <div className="item">
-          <div className="item-icon-container item-icon-container--primary">
-            <FaPuzzlePiece className="item-icon" />
+          <div className="item__icon-container item__icon-container--primary">
+            <FaPuzzlePiece className="item__icon" />
           </div>
-          <h1 className="item-title">Easy customization</h1>
-          <p className="item-desc">
+          <h1 className="item__title">Easy customization</h1>
+          <p className="item__desc">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Praesentium consequatur odit illo nesciunt nulla? Fuga, nisi.
           </p>
-          <button className="item-btn">Read more</button>
+          <button className="item__btn">Read more</button>
         </div>
         <div className="item">
-          <div className="item-icon-container">
-            <FaUserCircle className="item-icon" />
+          <div className="item__icon-container">
+            <FaUserCircle className="item__icon" />
           </div>
-          <h1 className="item-title">Awsome friendly support</h1>
-          <p className="item-desc">
+          <h1 className="item__title">Awsome friendly support</h1>
+          <p className="item__desc">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam optio
             quaerat alias, quae assumenda temporibus dolor.
           </p>
-          <button className="item-btn">Read more</button>
+          <button className="item__btn">Read more</button>
         </div>
       </div>
     </section>

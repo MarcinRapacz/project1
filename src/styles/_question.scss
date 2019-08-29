@@ -1,10 +1,9 @@
 .question {
   background-color: $primary-bg;
-  &-container {
+  &__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // align-items: center;
     box-sizing: border-box;
     max-width: 1024px;
     width: 100%;
@@ -15,12 +14,12 @@
       flex-direction: row;
     }
   }
-  &-desc {
+  &__desc {
     text-transform: uppercase;
     color: $secondary-text;
   }
 
-  &-btn-group {
+  &__btn-group {
     display: flex;
     flex-direction: column;
     @media (min-width: 768px) {
@@ -30,7 +29,7 @@
     }
   }
 
-  &-btn {
+  &__btn {
     margin-top: 0.2rem;
     padding: 0.7rem 1.2rem;
     border: 1px solid $light-bg;

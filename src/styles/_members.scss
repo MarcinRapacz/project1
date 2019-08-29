@@ -1,0 +1,139 @@
+.members {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 100px 1rem;
+  background-color: $light-bg;
+  &__desc {
+    color: $light-text;
+  }
+  &__presons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1024px;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.members-person {
+  border: 1px solid darken($color: $light-bg, $amount: 10%);
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+  &__img {
+    position: relative;
+    font-size: 0;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__social {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($primary-bg, 0.6);
+    transition: 0.3s;
+  }
+
+  &__icon {
+    border-radius: 5px;
+    background-color: $light-bg;
+    color: $primary-text;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+    cursor: pointer;
+    svg {
+      padding: 0.3rem;
+      font-size: 1rem;
+      transform: rotate(45deg);
+    }
+    &:hover {
+      background-color: $dark-bg;
+      color: $secondary-text;
+      z-index: 1;
+      transform: rotate(-45deg) scale(1.2);
+    }
+  }
+
+  &__details {
+    position: relative;
+    padding-top: 1rem;
+  }
+  &__name {
+    margin: 0;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: -1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $primary-bg;
+    border-radius: 5px;
+    color: $secondary-text;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    @media (min-width: 1024px) {
+      top: -1.1rem;
+      width: 40%;
+      padding: 0.5rem 1rem;
+    }
+  }
+  &__title {
+    margin-bottom: 0.8rem;
+    color: $medium-text;
+    font-size: 1.2rem;
+  }
+  &__email {
+    margin: 0.5rem 0;
+    color: $light-text;
+    font-size: 0.8rem;
+  }
+  &__phone {
+    margin: 0.5rem 0;
+    color: $light-text;
+    font-size: 0.8rem;
+  }
+  hr {
+    border-color: $light-bg;
+    width: 60%;
+  }
+
+  &:hover & {
+    &__social {
+      opacity: 1;
+    }
+
+    &__name {
+      background-color: $dark_bg;
+      color: $secondary-text;
+    }
+    &__email {
+      span {
+        font-weight: bold;
+        color: $primary-text;
+      }
+    }
+  }
+}

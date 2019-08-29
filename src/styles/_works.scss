@@ -12,11 +12,11 @@
     padding-right: 0.1rem;
     padding-left: 0.1rem;
   }
-  &-desc {
+  &__desc {
     color: $light-text;
     padding-bottom: 2rem;
   }
-  &-container {
+  &__container {
     display: grid;
     grid-gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -30,7 +30,7 @@
       grid-gap: 0.1rem;
     }
   }
-  &-item {
+  &__item {
     position: relative;
     overflow: hidden;
     line-height: 0;
@@ -42,11 +42,11 @@
       }
     }
   }
-  &-img {
+  &__img {
     width: 100%;
   }
 
-  &-hover {
+  &__hover {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -64,7 +64,7 @@
       opacity: 1;
     }
   }
-  &-hover-header {
+  &__hover-header {
     font-size: 0.6rem;
     @media (min-width: 425px) {
       font-size: 0.9rem;
@@ -76,7 +76,7 @@
       font-size: 0.9rem;
     }
   }
-  &-hover-secondheader {
+  &__hover-secondheader {
     font-size: 0.5rem;
     font-weight: normal;
     @media (min-width: 425px) {
@@ -89,14 +89,14 @@
       font-size: 0.6rem;
     }
   }
-  &-hover-likes {
+  &__hover-likes {
     font-size: 0.5rem;
     @media (min-width: 425px) {
       font-size: 0.6rem;
     }
   }
 
-  &-icon {
+  &__icon {
     position: absolute;
     top: 15%;
     left: 40%;
@@ -132,7 +132,7 @@
     }
   }
 
-  &-btn {
+  &__btn {
     width: 100%;
     max-width: 1024px;
     padding: 1rem;

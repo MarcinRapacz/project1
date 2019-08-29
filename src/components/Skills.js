@@ -30,18 +30,18 @@ const Skills = () => {
   return (
     <section className="skills container" id="skills">
       <Decorator>
-        <FaBriefcase className="decorator-icon" />
+        <FaBriefcase className="decorator__icon" />
       </Decorator>
       <Header first={header.first} second={header.second} />
-      <p className="skills-desc">
+      <p className="skills__desc">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam
         aliquam est temporibus sint, numquam harum.
       </p>
-      <div className="skills-container">
+      <div className="skills__container">
         {progressBars.map((progressBar, index) => (
           <VisibilitySensor key={index}>
             {({ isVisible }) => (
-              <div className="skills-progress-bar">
+              <div className="skills__progress-bar">
                 <CircularProgressbar
                   styles={buildStyles({
                     textColor: secondaryColor,
@@ -53,7 +53,7 @@ const Skills = () => {
                   text={`${progressBar.percentage}%`}
                   strokeWidth="1"
                 />
-                <h1 className="skills-header">{progressBar.desc}</h1>
+                <h1 className="skills__header">{progressBar.desc}</h1>
               </div>
             )}
           </VisibilitySensor>

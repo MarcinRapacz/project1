@@ -1,0 +1,46 @@
+.comments {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 100px 1rem;
+  background-color: $primary-bg;
+
+  &__name {
+    padding: 0.6rem 0.4rem;
+    border-radius: 5px;
+    background-color: $light-bg;
+    color: $primary-text;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  &__title {
+    text-transform: none;
+    font-style: italic;
+    color: darken($color: $secondary-text, $amount: 10%);
+  }
+  &__comment {
+    color: $secondary-text;
+    letter-spacing: 1px;
+  }
+  &__arrows {
+    margin-top: 1rem;
+  }
+  &__arrow {
+    margin: 0 0.2rem;
+    border-radius: 2px;
+    background-color: $light-bg;
+    color: $primary-text;
+    font-size: 1.4rem;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: $dark-bg;
+      color: $secondary-text;
+    }
+  }
+}

@@ -23,204 +23,204 @@ const Works = () => {
   return (
     <section className="works container" id="works">
       <Header first={header.first} second={header.second} />
-      <p className="works-desc">
+      <p className="works__desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, deleniti.
       </p>
-      <div className="works-container">
-        <div className="works-item">
-          <img src={works1} alt="person1" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+      <div className="works__container">
+        <div className="works__item">
+          <img src={works1} alt="person1" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works2} alt="person2" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works2} alt="person2" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works3} alt="person3" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works3} alt="person3" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works4} alt="person4" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works4} alt="person4" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works5} alt="person5" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works5} alt="person5" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works6} alt="person6" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works6} alt="person6" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works7} alt="person7" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works7} alt="person7" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works8} alt="person8" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works8} alt="person8" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works9} alt="person9" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works9} alt="person9" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works10} alt="person10" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works10} alt="person10" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works11} alt="person11" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works11} alt="person11" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
-        <div className="works-item">
-          <img src={works12} alt="person12" className="works-img" />
-          <div className="works-hover">
-            <div className="works-icon">
+        <div className="works__item">
+          <img src={works12} alt="person12" className="works__img" />
+          <div className="works__hover">
+            <div className="works__icon">
               <FaPaperclip />
             </div>
-            <div className="works-icon works-icon--secound">
+            <div className="works__icon works__icon--secound">
               <FaSearch />
             </div>
-            <h1 className="works-hover-header">Corporate Brochure</h1>
-            <h2 className="works-hover-secondheader">Illustration / Print</h2>
-            <p className="works-hover-likes">
+            <h1 className="works__hover-header">Corporate Brochure</h1>
+            <h2 className="works__hover-secondheader">Illustration / Print</h2>
+            <p className="works__hover-likes">
               <FaHeart /> 138
             </p>
           </div>
         </div>
       </div>
-      <button className="works-btn">View all works</button>
+      <button className="works__btn">View all works</button>
     </section>
   )
 }

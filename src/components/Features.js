@@ -13,41 +13,41 @@ const Features = () => {
   return (
     <section className="features container" id="features">
       <Decorator>
-        <FaKey className="decorator-icon" />
+        <FaKey className="decorator__icon" />
       </Decorator>
       <Header first={header.first} second={header.second} />
-      <p className="features-desc">
+      <p className="features__desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
         magni a. Quam laborum nihil mollitia nemo corrupti error!
       </p>
-      <div className="features-content">
-        <div className="features-list">
-          <div className="features-item item">
-            <FaDesktop className="item-icon" />
-            <h1 className="item-title">responsive & multipurpose</h1>
-            <p className="item-desc">
+      <div className="features__content">
+        <div className="features__list">
+          <div className="features__item item">
+            <FaDesktop className="item__icon" />
+            <h1 className="item__title">responsive & multipurpose</h1>
+            <p className="item__desc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
               dignissimos quam laudantium?
             </p>
           </div>
-          <div className="features-item item">
-            <FaPuzzlePiece className="item-icon" />
-            <h1 className="item-title">easy customization</h1>
-            <p className="item-desc">
+          <div className="features__item item">
+            <FaPuzzlePiece className="item__icon" />
+            <h1 className="item__title">easy customization</h1>
+            <p className="item__desc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
               dignissimos quam laudantium?
             </p>
           </div>
-          <div className="features-item item">
-            <FaStar className="item-icon" />
-            <h1 className="item-title">unlimited features</h1>
-            <p className="item-desc">
+          <div className="features__item item">
+            <FaStar className="item__icon" />
+            <h1 className="item__title">unlimited features</h1>
+            <p className="item__desc">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
               dignissimos quam laudantium?
             </p>
           </div>
         </div>
-        <div className="features-img"></div>
+        <div className="features__img"></div>
       </div>
     </section>
   )

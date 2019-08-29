@@ -54,19 +54,19 @@
     font-size: 1.4rem;
   }
 
-  .header-text {
-    &.header-text--primary {
+  &__text {
+    &--primary {
       color: $primary-text;
     }
-    &.header-text--secondary {
+    &--secondary {
       color: $secondary-text;
     }
-    &.header-text--dark {
+    &--dark {
       color: $dark-text;
     }
   }
 
-  .header-square {
+  &__square {
     position: absolute;
     top: 30%;
     display: inline-block;
