@@ -15,6 +15,9 @@ import Question from "../components/Question"
 import Members from "../components/Members"
 import Comments from "../components/Comments"
 import Companies from "../components/Companies"
+import Prices from "../components/Prices"
+import Banner from "../components/Banner"
+import SocialMedia from "../components/SocialMedia"
 
 export default () => (
   <>
@@ -30,5 +33,8 @@ export default () => (
     <Members />
     <Comments />
     <Companies />
+    <Prices />
+    <Banner />
+    <SocialMedia />
   </>
 )

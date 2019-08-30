@@ -1,0 +1,118 @@
+.prices {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 1rem;
+  box-sizing: border-box;
+  background-color: $light-bg;
+  &__container {
+    max-width: 1024px;
+    width: 100%;
+  }
+  &__desc {
+    margin-bottom: 3rem;
+    color: $medium-text;
+  }
+  &__plans-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 4fr);
+    grid-gap: 3rem;
+    width: 100%;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 4fr);
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 4fr);
+      grid-gap: 1rem;
+    }
+  }
+  &__plan {
+    position: relative;
+    border: 1px solid darken($light-bg, 10%);
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    hr {
+      border-color: darken($light-bg, 10%);
+      width: 70%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__plan-header {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    width: 75%;
+    transform: translateX(-50%);
+    padding: 0.7rem 0;
+    border: 1px solid $dark-bg;
+    border-radius: 5px;
+    background-color: $dark-bg;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $secondary-text;
+    svg {
+      display: none;
+    }
+    &--premium {
+      background-color: $primary-bg;
+    }
+    &--stars {
+      svg {
+        display: inline-block;
+        color: $primary-text;
+      }
+    }
+  }
+  &__plan-price {
+    position: relative;
+    color: $dark-text;
+    font-size: 0.9rem;
+    span {
+      display: inline-block;
+      &:nth-child(1) {
+        margin-left: 0.3rem;
+        font-size: 3.6rem;
+        font-weight: bold;
+        transform: translateY(10px);
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 10px;
+        left: 51%;
+      }
+    }
+  }
+  &__plan-desc {
+    color: $medium-text;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+  &__plan-btn {
+    padding: 0.7rem 1.6rem;
+    border: 1px solid $primary-bg;
+    border-radius: 5px;
+    background-color: $primary-bg;
+    color: $secondary-text;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: $light-bg;
+      color: $primary-text;
+    }
+  }
+}

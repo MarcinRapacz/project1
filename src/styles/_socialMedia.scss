@@ -1,0 +1,32 @@
+.social-media {
+  padding: 100px 1rem;
+  box-sizing: border-box;
+  background-color: $dark-bg;
+  text-align: center;
+  &__header {
+    font-family: "Share Tech Mono", monospace;
+    color: $secondary-text;
+    span {
+      color: $primary-text;
+    }
+  }
+  &__icon {
+    margin: 0 0.2rem;
+    padding: 0.5rem;
+    border: 1px solid $medium-text;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: $secondary-text;
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      margin: 0 0.5rem;
+      font-size: 1.4rem;
+    }
+    &:hover {
+      background-color: $primary-bg;
+      transform: scale(1.5);
+    }
+  }
+}
