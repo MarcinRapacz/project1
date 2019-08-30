@@ -18,6 +18,7 @@ import Companies from "../components/Companies"
 import Prices from "../components/Prices"
 import Banner from "../components/Banner"
 import SocialMedia from "../components/SocialMedia"
+import Contact from "../components/Contact"
 
 export default () => (
   <>
@@ -36,5 +37,6 @@ export default () => (
     <Prices />
     <Banner />
     <SocialMedia />
+    <Contact />
   </>
 )
