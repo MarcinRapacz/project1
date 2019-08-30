@@ -2,7 +2,10 @@ import React from "react"
 
 const Decorator = props => {
   return (
-    <div className={`decorator ${props.dark && "decorator--darker"}`}>
+    <div
+      onClick={props.onClick}
+      className={`decorator ${props.dark && "decorator--darker"}`}
+    >
       {props.children}
     </div>
   )
