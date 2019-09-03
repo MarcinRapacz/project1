@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { FaAtom } from "react-icons/fa"
 import axios from "axios"
 import validator from "validator"
 
@@ -19,6 +20,7 @@ const Contact = () => {
   }
   const [data, setData] = useState(defaultForm)
   const [message, setMessage] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const handleChange = e => {
     let isValid = false
@@ -26,15 +28,15 @@ const Contact = () => {
     switch (e.target.name) {
       case "name":
         isValid = validator.isLength(e.target.value, { min: 2, max: 64 })
-        error = isValid ? false : "Wprowadź poprawne imię"
+        error = isValid ? false : "Enter the correct name"
         break
       case "email":
         isValid = validator.isEmail(e.target.value)
-        error = isValid ? false : "Wprowadź poprawny email"
+        error = isValid ? false : "Enter the correct email"
         break
       case "message":
         isValid = validator.isLength(e.target.value, { min: 2, max: 400 })
-        error = isValid ? false : "Wprowadź poprawną wiadomość"
+        error = isValid ? false : "Enter the correct message"
         break
       default:
         break
@@ -54,26 +56,34 @@ const Contact = () => {
     const dataToSend = {}
     const errors = []
 
+    setLoading(true)
+
     for (const field in data) {
       dataToSend[field] = data[field].value
       if (data[field].error) errors.push(data[field].error)
+      if (!data[field].value) errors.push(data[field].error)
     }
+
     if (errors.length) {
-      setMessage("Uzupełnij wszystkie pola")
-      setTimeout(() => setMessage(false), 5000)
+      setMessage("Complete all fields")
     } else {
-      await axios.post(
-        "https://microservice-send-email.herokuapp.com/api/sendEmail",
-        {
+      await axios
+        .post("https://microservice-send-email.herokuapp.com/api/sendEmail", {
           data: dataToSend,
           API_KEY:
             "c9047f6cd74f2aa734ffca287eef938ad89552c273b38f5911e3b60857995493",
-        }
-      )
-      setData(defaultForm)
-      setMessage("Wiadomośc została wysłana")
-      setTimeout(() => setMessage(false), 5000)
+        })
+        .then(res => {
+          setData(defaultForm)
+          setMessage("Message was sent")
+        })
+        .catch(err => {
+          setMessage("Something went wrong. Try again")
+        })
     }
+    setTimeout(() => setMessage(false), 5000)
+
+    setLoading(false)
   }
 
   return (
@@ -123,9 +133,13 @@ const Contact = () => {
             {data.message.error}
           </p>
 
-          <button type="submit" className="contact__btn">
-            {message ? message : "Submit message"}
-          </button>
+          {loading ? (
+            <FaAtom className="contact__icon" />
+          ) : (
+            <button type="submit" className="contact__btn">
+              {message ? message : "Submit message"}
+            </button>
+          )}
         </form>
       </div>
     </section>
