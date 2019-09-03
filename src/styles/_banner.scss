@@ -37,6 +37,10 @@
   }
   &__heart {
     color: $primary-text;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.5);
+    }
   }
   &__btn {
     margin-top: 0.3rem;
@@ -48,6 +52,7 @@
     font-size: 0.8rem;
     text-transform: uppercase;
     transition: 0.3s;
+    cursor: pointer;
     &:hover {
       background-color: $light-bg;
       color: $primary-text;
