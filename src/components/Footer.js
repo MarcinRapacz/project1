@@ -23,7 +23,7 @@ const Footer = () => {
 
   return (
     <footer className="container footer">
-      <Decorator onClick={handleClick}>
+      <Decorator onClick={handleClick} pulse>
         <FaCaretUp />
       </Decorator>
       <p className="footer__desc">

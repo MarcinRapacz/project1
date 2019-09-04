@@ -1,8 +1,8 @@
 import React from "react"
-import { FaHtml5, FaSass, FaNodeJs, FaReact } from "react-icons/fa"
+import { FaSass, FaNodeJs, FaReact, FaNode } from "react-icons/fa"
 
 const Companies = () => {
-  const icons = [FaHtml5, FaSass, FaNodeJs, FaReact]
+  const icons = [FaNode, FaSass, FaNodeJs, FaReact]
   return (
     <section className="companies container">
       <div className="companies__icon-container">

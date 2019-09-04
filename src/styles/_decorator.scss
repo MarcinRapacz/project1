@@ -1,3 +1,15 @@
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba($primary-bg, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba($primary-bg, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba($primary-bg, 0);
+  }
+}
+
 $size: 20px;
 
 .decorator {
@@ -19,5 +31,10 @@ $size: 20px;
 
   &--darker {
     background-color: $dark-bg;
+  }
+
+  &--pulse {
+    cursor: pointer;
+    animation: pulse 2s infinite;
   }
 }

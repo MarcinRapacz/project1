@@ -4,7 +4,8 @@ const Decorator = props => {
   return (
     <div
       onClick={props.onClick}
-      className={`decorator ${props.dark && "decorator--darker"}`}
+      className={`decorator ${props.dark &&
+        "decorator--darker"} ${props.pulse && "decorator--pulse"}`}
     >
       {props.children}
     </div>
